@@ -1,0 +1,69 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>18</x><y>369</y><w>171</w><h>180</h></coordinates><panel_attributes>Player
+--
+-coin: int
+-name: str
+-won: int
+-played: int
+--
++get_name()
++get_coins()
++get_won()
++get_played()
++add_coins()
++add_won()
++add_played()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>45</x><y>135</y><w>171</w><h>189</h></coordinates><panel_attributes>TonsoDice
+--
+-players[Player]
+
+--
++append_players()
++get_players()
++welcome()
++menu()
++run()
++addPlayer()
++showLeaderBoard()
++playGame()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>315</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>144</x><y>558</y><w>135</w><h>117</h></coordinates><panel_attributes>Dice
+--
++strong: int
++result: int
+--
++throw()
++get_result()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>387</x><y>378</y><w>144</w><h>99</h></coordinates><panel_attributes>EvenOrOdd
+--
+-player
+-result: []
+--
++play()
++get_result()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>378</y><w>126</w><h>99</h></coordinates><panel_attributes>Bunco
+--
+-player
+-result: []
+--
++play()
++get_result()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>396</x><y>558</y><w>135</w><h>99</h></coordinates><panel_attributes>/Games/
+--
++dices[Dice]
+--
++addDice(int)
++throw()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>216</x><y>378</y><w>162</w><h>99</h></coordinates><panel_attributes>Minz
+--
+-player
+-result: []
+--
++play()
++get_result()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>315</x><y>468</y><w>171</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;170;40</additional_attributes></element><element><id>Relation</id><coordinates><x>459</x><y>468</y><w>27</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>459</x><y>468</y><w>144</w><h>54</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>140;10;140;40;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>612</y><w>144</w><h>27</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>140;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>342</x><y>144</y><w>216</w><h>144</h></coordinates><panel_attributes>Play
+--
+-game
+-playing: Minz,EvenOrOdd,Bunco
+-player:[Player]
+-bid: []
+-nameList: []
+--
++addPlayer()
++play()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>315</x><y>279</y><w>117</w><h>117</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>110;10;110;90;10;90;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>279</y><w>27</w><h>117</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>459</x><y>279</y><w>144</w><h>117</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90;140;90;140;110</additional_attributes></element><element><id>Relation</id><coordinates><x>207</x><y>189</y><w>153</w><h>27</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;150;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>216</x><y>36</y><w>234</w><h>81</h></coordinates><panel_attributes>Note..
+CS2201
+Yile Wang
+2218040121</panel_attributes><additional_attributes></additional_attributes></element></diagram>
